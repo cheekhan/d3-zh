@@ -22,7 +22,7 @@ export default defineConfig({
   vite: {
     resolve: {
       alias: [
-        { find: "d3", replacement: path.resolve("./dist/d3.mjs") },
+        // { find: "d3", replacement: path.resolve("./dist/d3.mjs") },
         { find: /^.*\/VPFooter\.vue$/, replacement: fileURLToPath(new URL("./theme/CustomFooter.vue", import.meta.url)) }
       ]
     }
