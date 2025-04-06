@@ -83,7 +83,7 @@
     "prepublishOnly": "rm -rf dist && rollup -c",
     "postpublish": "git push && git push --tags",
     "docs:dev": "node node_modules/vitepress/dist/node/cli.js dev docs --port 8999",
-    "docs:build": "prebuild.sh && node node_modules/vitepress/dist/node/cli.js build docs",
+    "docs:build": "./prebuild.sh && node --experimental-network-imports node_modules/vitepress/dist/node/cli.js build docs",
     "docs:preview": "vitepress preview docs"
   },
   "engines": {
