@@ -19,12 +19,8 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 20
-          cache: 'yarn'
-      - name: Grant execute permission for prebuild.sh
-        run: chmod +x ./prebuild.sh
-      - run: yarn --frozen-lockfile
-      - run: yarn prepublishOnly
-      - run: yarn docs:build
+          cache: 'pnpm'
+      - run: pnpm run docs:build
       - uses: actions/configure-pages@v4
       - uses: actions/upload-pages-artifact@v3
         with:
