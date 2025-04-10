@@ -7,6 +7,7 @@ export default defineConfig({
   title: "本地翻译D3",
   description: "定制数据可视化的JavaScript库",
   cleanUrls: true,
+  base:"/d3-zh/",
   sitemap: {
     hostname: "https://d3js.org"
   },
